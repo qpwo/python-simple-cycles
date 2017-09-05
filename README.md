@@ -4,8 +4,11 @@ This is an algorithm for finding all the simple cycles in a directed graph.
 
 I've simply modified [networkx][1]'s implementation to use vanilla python, not depending on their special DiGraph structure. [Original implementation.][2]
 
-The original paper: Donald B Johnson. "Finding all the elementary circuits of a directed graph." SIAM Journal on Computing. 1975.
- 
+[1]: https://networkx.github.io/
+[2]: https://gist.github.com/qpwo/44b48595c2946bb8f823e2d72f687cd8 
+
+The original paper which described the algorithm:  
+Donald B Johnson. "Finding all the elementary circuits of a directed graph." SIAM Journal on Computing. 1975.
 
 ### Example
 
