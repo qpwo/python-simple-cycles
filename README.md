@@ -1,11 +1,16 @@
 ## Python Simple Cycles
 
-This is an algorithm for finding all the simple cycles in a directed graph.
+This is an algorithm for finding all the simple [cycles][4] in a directed graph.
 
-I've simply modified [networkx][1]'s implementation to use vanilla python, not depending on their special DiGraph structure. [Original implementation.][2]
+Originally, I implemented this directly from the 1975 Donald B Johnson [paper][5] "Finding all the elementary circuits of a directed graph". Later, I found an error in my code, found NetworkX's code, and slightly changed _that_ code so it didn't depend on the NetworkX data structures (so the algorithm could be used in [IronPython][3]).
+
+[NetworkX][1]'s [original implementation][2]
 
 [1]: https://networkx.github.io/
-[2]: https://gist.github.com/qpwo/44b48595c2946bb8f823e2d72f687cd8 
+[2]: https://github.com/networkx/networkx/blob/master/networkx/algorithms/cycles.py#L110
+[3]: http://ironpython.net/
+[4]: https://en.wikipedia.org/wiki/Cycle_(graph_theory)
+[5]: https://doi.org/10.1137/0204007 
 
 The original paper which described the algorithm:  
 Donald B Johnson. "Finding all the elementary circuits of a directed graph." SIAM Journal on Computing. 1975.
