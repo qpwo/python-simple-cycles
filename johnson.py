@@ -1,6 +1,5 @@
-# Luke Miles, September 2017
-# A modification of networkx's implementation of Johnson's cycle finding algorithm
-# Original implementation: https://gist.github.com/qpwo/44b48595c2946bb8f823e2d72f687cd8
+# A dependency-free version of networkx's implementation of Johnson's cycle finding algorithm
+# Original implementation: https://github.com/networkx/networkx/blob/master/networkx/algorithms/cycles.py#L109
 # Original paper: Donald B Johnson. "Finding all the elementary circuits of a directed graph." SIAM Journal on Computing. 1975.
 
 from collections import defaultdict
